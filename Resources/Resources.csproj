@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7FBD8965-AC38-430E-BCF3-9EDC0A8F5924}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Resources</RootNamespace>
+    <AssemblyName>Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SmartStringResources, Version=1.2.0.0, Culture=neutral, PublicKeyToken=3c7758f6073f4aba, processorArchitecture=MSIL">
+      <HintPath>..\packages\SmartStringResources.1.2.0\lib\net40\SmartStringResources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcademyManagment\AcademyDay.fa-IR.Designer.cs">
+      <DependentUpon>AcademyDay.fa-IR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AcademyManagment\AcademyDay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcademyDay.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\AcademyDay.tt.cs">
+      <DependentUpon>AcademyDay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\Course.fa-IR.Designer.cs">
+      <DependentUpon>Course.fa-IR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AcademyManagment\Course.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\Course.tt.cs">
+      <DependentUpon>Course.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\Feature.fa-IR.Designer.cs">
+      <DependentUpon>Feature.fa-IR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AcademyManagment\Feature.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Feature.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\Feature.tt.cs">
+      <DependentUpon>Feature.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\Instrument.fa-IR.Designer.cs">
+      <DependentUpon>Instrument.fa-IR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AcademyManagment\Instrument.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Instrument.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\Instrument.tt.cs">
+      <DependentUpon>Instrument.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\JoinToCourse.fa-IR.Designer.cs">
+      <DependentUpon>JoinToCourse.fa-IR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AcademyManagment\JoinToCourse.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JoinToCourse.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\JoinToCourse.tt.cs">
+      <DependentUpon>JoinToCourse.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\PaymentCourse.fa-IR.Designer.cs">
+      <DependentUpon>PaymentCourse.fa-IR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AcademyManagment\PaymentCourse.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentCourse.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\PaymentCourse.tt.cs">
+      <DependentUpon>PaymentCourse.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\Role.fa-IR1.Designer.cs">
+      <DependentUpon>Role.fa-IR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AcademyManagment\Role.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Role.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\Role.tt.cs">
+      <DependentUpon>Role.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\Room.fa-IR.Designer.cs">
+      <DependentUpon>Room.fa-IR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AcademyManagment\Room.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Room.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\Room.tt.cs">
+      <DependentUpon>Room.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\RoomsDay.Designer.cs">
+      <DependentUpon>RoomsDay.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AcademyManagment\RoomsDay.fa-IR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoomsDay.fa-IR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AcademyManagment\RoomsDay.tt.cs">
+      <DependentUpon>RoomsDay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\Article.fa-IR.Designer.cs">
+      <DependentUpon>Article.fa-IR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CMS\Article.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Article.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\Article.tt.cs">
+      <DependentUpon>Article.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\Contact.fa-IR.Designer.cs">
+      <DependentUpon>Contact.fa-IR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CMS\Contact.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contact.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\Contact.tt.cs">
+      <DependentUpon>Contact.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\Menu.fa-IR.Designer.cs">
+      <DependentUpon>Menu.fa-IR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CMS\Menu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Menu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\Menu.tt.cs">
+      <DependentUpon>Menu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\Slider.fa-IR.Designer.cs">
+      <DependentUpon>Slider.fa-IR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CMS\Slider.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Slider.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\Slider.tt.cs">
+      <DependentUpon>Slider.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Messages.fa-IR.Designer.cs">
+      <DependentUpon>Messages.fa-IR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Messages.tt.cs">
+      <DependentUpon>Messages.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Person.fa-IR.Designer.cs">
+      <DependentUpon>Person.fa-IR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Person.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Person.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Person.tt.cs">
+      <DependentUpon>Person.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AcademyManagment\AcademyDay.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AcademyDay.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\AcademyDay.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AcademyDay.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\Course.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Course.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\Course.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Course.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\Feature.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Feature.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\Feature.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Feature.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\Instrument.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Instrument.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\Instrument.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Instrument.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\JoinToCourse.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>JoinToCourse.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\JoinToCourse.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>JoinToCourse.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\PaymentCourse.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PaymentCourse.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\PaymentCourse.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PaymentCourse.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\Role.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Role.fa-IR1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\Role.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Role.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\Room.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Room.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\Room.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Room.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\RoomsDay.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RoomsDay.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademyManagment\RoomsDay.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RoomsDay.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMS\Article.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Article.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMS\Article.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Article.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMS\Contact.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Contact.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMS\Contact.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Contact.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMS\Menu.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Menu.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMS\Menu.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Menu.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMS\Slider.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Slider.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMS\Slider.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Slider.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person.fa-IR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Person.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Person.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AcademyManagment\Course.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Course1.txt</LastGenOutput>
+    </Content>
+    <Content Include="AcademyManagment\AcademyDay.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AcademyDay.txt</LastGenOutput>
+    </Content>
+    <Content Include="AcademyManagment\AcademyDay.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcademyDay.tt</DependentUpon>
+    </Content>
+    <Content Include="AcademyManagment\Course1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course.tt</DependentUpon>
+    </Content>
+    <Content Include="AcademyManagment\Feature.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Feature1.txt</LastGenOutput>
+    </Content>
+    <Content Include="AcademyManagment\Feature1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Feature.tt</DependentUpon>
+    </Content>
+    <Content Include="AcademyManagment\Instrument.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Instrument1.txt</LastGenOutput>
+    </Content>
+    <Content Include="AcademyManagment\Instrument1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Instrument.tt</DependentUpon>
+    </Content>
+    <Content Include="AcademyManagment\JoinToCourse.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>JoinToCourse1.txt</LastGenOutput>
+    </Content>
+    <Content Include="AcademyManagment\JoinToCourse1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JoinToCourse.tt</DependentUpon>
+    </Content>
+    <Content Include="AcademyManagment\PaymentCourse.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>PaymentCourse1.txt</LastGenOutput>
+    </Content>
+    <Content Include="AcademyManagment\PaymentCourse1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentCourse.tt</DependentUpon>
+    </Content>
+    <Content Include="AcademyManagment\Role.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Role1.txt</LastGenOutput>
+    </Content>
+    <Content Include="AcademyManagment\Role1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Role.tt</DependentUpon>
+    </Content>
+    <Content Include="AcademyManagment\Room.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Room1.txt</LastGenOutput>
+    </Content>
+    <Content Include="AcademyManagment\Room1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Room.tt</DependentUpon>
+    </Content>
+    <Content Include="AcademyManagment\RoomsDay.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>RoomsDay1.txt</LastGenOutput>
+    </Content>
+    <Content Include="AcademyManagment\RoomsDay1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoomsDay.tt</DependentUpon>
+    </Content>
+    <Content Include="CMS\Article1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Article.tt</DependentUpon>
+    </Content>
+    <Content Include="CMS\Contact.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Contact.txt</LastGenOutput>
+    </Content>
+    <Content Include="CMS\Contact.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contact.tt</DependentUpon>
+    </Content>
+    <Content Include="CMS\Menu.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Menu1.txt</LastGenOutput>
+    </Content>
+    <Content Include="CMS\Menu1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Menu.tt</DependentUpon>
+    </Content>
+    <Content Include="CMS\Article.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Article1.txt</LastGenOutput>
+    </Content>
+    <Content Include="CMS\Slider.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Slider1.txt</LastGenOutput>
+    </Content>
+    <Content Include="CMS\Slider1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Slider.tt</DependentUpon>
+    </Content>
+    <Content Include="Documents\SmartStringResources.txt" />
+    <Content Include="Messages1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.tt</DependentUpon>
+    </Content>
+    <Content Include="Person.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Person1.txt</LastGenOutput>
+    </Content>
+    <Content Include="Messages.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Messages1.txt</LastGenOutput>
+    </Content>
+    <Content Include="Person1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Person.tt</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
