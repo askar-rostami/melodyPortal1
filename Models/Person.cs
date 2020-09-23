@@ -38,8 +38,7 @@ namespace Models
         [Display(Name ="ایمیل")]
         [Required(ErrorMessage ="لطفا {0} را وارد نمایید",AllowEmptyStrings =false)]
         [StringLength(maximumLength:50)]
-        [System.ComponentModel.DataAnnotations.Schema.Index
-(IsUnique = true)]
+        [System.ComponentModel.DataAnnotations.Schema.Index(IsUnique = true)]
         public string Email { get; set; }
 
         [Display(Name ="رمز عبور")]
